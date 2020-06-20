@@ -1,0 +1,50 @@
+import os,sys
+import time
+
+os.system('cat banner.txt | lolcat')
+time.sleep(3)
+os.system('clear')
+os.system('figlet -f mono9 IP LOGGER | lolcat')
+time.sleep(3)
+print ('')
+print ('')
+print('คุณต้องการที่จะเปิดใช้งาน ngrok หรือ seeker ไหม ? [ y/n ]')
+IPLOGGER = input("เลือก : ")
+
+if  IPLOGGER == "y" or IPLOGGER == "yes":
+            print ('[1] ngrok')
+            print ('[2] seeker')
+            print ('[3] ข้าม IP LOGGER')
+print ('')
+print ('คุณต้องการจะใช้  ngrok หรือ seeker ?')
+IP = input("เลือก : ")
+
+if  IP == "1" or IP == "01":
+      os.system('cat ngrok.txt | lolcat')
+      os.system('./ngrok http 8080')
+elif  IP == "2" or IP == "02":
+      os.system('SEEKER')
+print ('')
+print ('')
+time.sleep(3)
+print ('เสร็จสิ้น IP LOGGER')
+print ('')
+print ('')
+os.system('figlet -f mono9 EXIFTOOL | lolcat')
+print ('')
+print ('')
+os.system('cat EXIF.txt | lolcat')
+time.sleep(3)
+EXIF = input("ที่อยู่รูปภาพ : ")
+
+os.system('exiftool %s | grep GPS'%(EXIF))
+os.system('exiftool %s | grep Make'%(EXIF))
+os.system('exiftool %s | grep Camera'%(EXIF))
+os.system('exiftool %s | grep Date'%(EXIF))
+print ('')
+print ('')
+print ('')
+print ('ขอบคุณที่ใช้งาน :)')
+print ('CU again')
+print ('')
+print ('')
