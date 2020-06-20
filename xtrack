@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd $HOME/XTRACK
+python3 XTRACK.py
