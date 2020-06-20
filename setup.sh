@@ -14,12 +14,14 @@ cd
 cd XTRACK
 mv SEEKER /data/data/com.termux/files/usr/bin
 mv xtrack /data/data/com.termux/files/usr/bin
+mv update-xtrack /data/data/com.termux/files/usr/bin
 cd
 cd ..
 cd usr
 cd bin
 chmod +x SEEKER
 chmod +x xtrack
+chmod +x update-xtrack
 cd
 cd XTRACK
 unzip ngrok.zip
