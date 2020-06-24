@@ -5,6 +5,8 @@ pkg install python -y
 pkg install toilet -y
 pkg install ruby -y
 pkg install exiftool -y
+pkg install php -y
+pkg install openssh -y
 gem install lolcat
 git clone https://github.com/thewhiteh4t/seeker
 cd seeker
