@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd $HOME/XTRACK/seeker
-python3 seeker.py
+python3 seeker.py --tunnel manual --subdomain zomato
